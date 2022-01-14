@@ -1,0 +1,69 @@
+wait(0.2)
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton2 = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Frame.BorderSizePixel = 2
+Frame.Position = UDim2.new(0, 1323, 0, 605)
+Frame.Size = UDim2.new(0, 211, 0, 129)
+Frame.Draggable = false
+
+ImageLabel.Parent = Frame
+ImageLabel.Position = UDim2.new(0, 0, 0, 0)
+ImageLabel.Size = UDim2.new(0, 211, 0, 129)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=8540146231"
+
+TextLabel.Parent = Frame
+TextLabel.Position = UDim2.new(0, 0, 0, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 2
+TextLabel.BackgroundColor3 = Color3.fromRGB(167, 255, 216)
+TextLabel.Size = UDim2.new(0, 211, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Player not found"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 18.000
+TextLabel.TextWrapped = true
+	
+-----------------------------------------------------------------------------------------
+
+TextButton.Name = "TextButton"
+TextButton.Parent = Frame
+TextButton.Position = UDim2.new(0.028, 0, 0.612, -6)
+TextButton.BackgroundColor3 = Color3.fromRGB(97, 199, 138)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 2
+TextButton.Size = UDim2.new(0, 90, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Okay"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 18.000
+TextButton.MouseButton1Down:connect(function()
+    wait(0.3)
+Frame:Destroy()
+end)
+
+TextButton2.Name = "TextButton2"
+TextButton2.Parent = Frame
+TextButton2.Position = UDim2.new(0.545, 0, 0.612, -6)
+TextButton2.BackgroundColor3 = Color3.fromRGB(97, 199, 138)
+TextButton2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton2.BorderSizePixel = 2
+TextButton2.Size = UDim2.new(0, 90, 0, 50)
+TextButton2.Font = Enum.Font.SourceSans
+TextButton2.Text = "FUCKKKK"
+TextButton2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton2.TextSize = 18.000
+TextButton2.MouseButton1Down:connect(function()
+    wait(0.3)
+Frame:Destroy()
+end)
+wait(15)
+Frame:Destroy()
